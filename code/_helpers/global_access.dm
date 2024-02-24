@@ -1,22 +1,14 @@
 // THIS FILE IS AUTOMATICALLY CREATED BY tools/gen_globals.py
 /proc/readglobal(which)
 	switch(which)
-		if("ALL_ANTIGENS")
-			return global.ALL_ANTIGENS;
-		if("ANTAG_FREQS")
-			return global.ANTAG_FREQS;
 		if("BSACooldown")
 			return global.BSACooldown;
 		if("BUMP_TELEPORTERS")
 			return global.BUMP_TELEPORTERS;
 		if("Banlist")
 			return global.Banlist;
-		if("CENT_FREQS")
-			return global.CENT_FREQS;
 		if("CMinutes")
 			return global.CMinutes;
-		if("DEPT_FREQS")
-			return global.DEPT_FREQS;
 		if("Debug2")
 			return global.Debug2;
 		if("Failsafe")
@@ -201,8 +193,6 @@
 			return global.asset_datums;
 		if("assigned")
 			return global.assigned;
-		if("assigned_blocks")
-			return global.assigned_blocks;
 		if("atmosphere_alarm")
 			return global.atmosphere_alarm;
 		if("attack_log_repository")
@@ -311,12 +301,6 @@
 			return global.department_accounts;
 		if("department_radio_keys")
 			return global.department_radio_keys;
-		if("dna_activity_bounds")
-			return global.dna_activity_bounds;
-		if("dna_genes")
-			return global.dna_genes;
-		if("doppler_arrays")
-			return global.doppler_arrays;
 		if("dreams")
 			return global.dreams;
 		if("dummy_lighting_corner")
@@ -359,8 +343,6 @@
 			return global.floorIsLava;
 		if("floor_decals")
 			return global.floor_decals;
-		if("floor_light_cache")
-			return global.floor_light_cache;
 		if("flooring_cache")
 			return global.flooring_cache;
 		if("flooring_types")
@@ -551,8 +533,6 @@
 			return global.next_duration_update;
 		if("next_station_date_change")
 			return global.next_station_date_change;
-		if("ntnet_card_uid")
-			return global.ntnet_card_uid;
 		if("ntnet_global")
 			return global.ntnet_global;
 		if("ntnrc_uid")
@@ -563,10 +543,6 @@
 			return global.nuke_disks;
 		if("num_financial_terminals")
 			return global.num_financial_terminals;
-		if("ore_data")
-			return global.ore_data;
-		if("ores_by_type")
-			return global.ores_by_type;
 		if("organ_cache")
 			return global.organ_cache;
 		if("organ_rel_size")
@@ -631,10 +607,6 @@
 			return global.protected_objects;
 		if("rad_collectors")
 			return global.rad_collectors;
-		if("radio_controller")
-			return global.radio_controller;
-		if("radiochannels")
-			return global.radiochannels;
 		if("random_junk_")
 			return global.random_junk_;
 		if("random_maps")
@@ -785,8 +757,6 @@
 			return global.trait_type_to_ref;
 		if("transfer_controller")
 			return global.transfer_controller;
-		if("turbolifts")
-			return global.turbolifts;
 		if("turret_icons")
 			return global.turret_icons;
 		if("uniqueness_repository")
@@ -844,22 +814,14 @@
 
 /proc/writeglobal(which, newval)
 	switch(which)
-		if("ALL_ANTIGENS")
-			global.ALL_ANTIGENS=newval;
-		if("ANTAG_FREQS")
-			global.ANTAG_FREQS=newval;
 		if("BSACooldown")
 			global.BSACooldown=newval;
 		if("BUMP_TELEPORTERS")
 			global.BUMP_TELEPORTERS=newval;
 		if("Banlist")
 			global.Banlist=newval;
-		if("CENT_FREQS")
-			global.CENT_FREQS=newval;
 		if("CMinutes")
 			global.CMinutes=newval;
-		if("DEPT_FREQS")
-			global.DEPT_FREQS=newval;
 		if("Debug2")
 			global.Debug2=newval;
 		if("Failsafe")
@@ -1048,8 +1010,6 @@
 			global.asset_datums=newval;
 		if("assigned")
 			global.assigned=newval;
-		if("assigned_blocks")
-			global.assigned_blocks=newval;
 		if("atmosphere_alarm")
 			global.atmosphere_alarm=newval;
 		if("attack_log_repository")
@@ -1158,12 +1118,6 @@
 			global.department_accounts=newval;
 		if("department_radio_keys")
 			global.department_radio_keys=newval;
-		if("dna_activity_bounds")
-			global.dna_activity_bounds=newval;
-		if("dna_genes")
-			global.dna_genes=newval;
-		if("doppler_arrays")
-			global.doppler_arrays=newval;
 		if("dreams")
 			global.dreams=newval;
 		if("dummy_lighting_corner")
@@ -1206,8 +1160,6 @@
 			global.floorIsLava=newval;
 		if("floor_decals")
 			global.floor_decals=newval;
-		if("floor_light_cache")
-			global.floor_light_cache=newval;
 		if("flooring_cache")
 			global.flooring_cache=newval;
 		if("flooring_types")
@@ -1398,8 +1350,6 @@
 			global.next_duration_update=newval;
 		if("next_station_date_change")
 			global.next_station_date_change=newval;
-		if("ntnet_card_uid")
-			global.ntnet_card_uid=newval;
 		if("ntnet_global")
 			global.ntnet_global=newval;
 		if("ntnrc_uid")
@@ -1410,10 +1360,6 @@
 			global.nuke_disks=newval;
 		if("num_financial_terminals")
 			global.num_financial_terminals=newval;
-		if("ore_data")
-			global.ore_data=newval;
-		if("ores_by_type")
-			global.ores_by_type=newval;
 		if("organ_cache")
 			global.organ_cache=newval;
 		if("organ_rel_size")
@@ -1478,10 +1424,6 @@
 			global.protected_objects=newval;
 		if("rad_collectors")
 			global.rad_collectors=newval;
-		if("radio_controller")
-			global.radio_controller=newval;
-		if("radiochannels")
-			global.radiochannels=newval;
 		if("random_junk_")
 			global.random_junk_=newval;
 		if("random_maps")
@@ -1632,8 +1574,6 @@
 			global.trait_type_to_ref=newval;
 		if("transfer_controller")
 			global.transfer_controller=newval;
-		if("turbolifts")
-			global.turbolifts=newval;
 		if("turret_icons")
 			global.turret_icons=newval;
 		if("universe_has_ended")
@@ -1688,14 +1628,10 @@
 			global.zone_blocked=newval;
 
 /var/list/_all_globals=list(
-	"ALL_ANTIGENS",
-	"ANTAG_FREQS",
 	"BSACooldown",
 	"BUMP_TELEPORTERS",
 	"Banlist",
-	"CENT_FREQS",
 	"CMinutes",
-	"DEPT_FREQS",
 	"Debug2",
 	"EAMS_errorsCounter",
 	"Failsafe",
@@ -1887,7 +1823,6 @@
 	"flesh_hud_colours",
 	"floorIsLava",
 	"floor_decals",
-	"floor_light_cache",
 	"flooring_cache",
 	"flooring_types",
 	"fluidtrack_cache",
@@ -1999,8 +1934,6 @@
 	"nttransfer_uid",
 	"nuke_disks",
 	"num_financial_terminals",
-	"ore_data",
-	"ores_by_type",
 	"organ_cache",
 	"organ_rel_size",
 	"outfits_decls_",
@@ -2035,8 +1968,6 @@
 	"prizes",
 	"protected_objects",
 	"rad_collectors",
-	"radio_controller",
-	"radiochannels",
 	"random_junk_",
 	"random_maps",
 	"random_useful_",
@@ -2134,7 +2065,6 @@
 	"trait_datums",
 	"trait_type_to_ref",
 	"transfer_controller",
-	"turbolifts",
 	"turret_icons",
 	"uniqueness_repository",
 	"universe_has_ended",

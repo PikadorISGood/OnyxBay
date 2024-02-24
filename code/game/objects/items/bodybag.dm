@@ -20,8 +20,8 @@
 	desc = "This box contains body bags."
 	icon_state = "bodybags"
 
-/obj/item/storage/box/bodybags/New()
-	..()
+/obj/item/storage/box/bodybags/Initialize()
+	. = ..()
 	new /obj/item/bodybag(src)
 	new /obj/item/bodybag(src)
 	new /obj/item/bodybag(src)
@@ -50,6 +50,7 @@
 	var/obj/structure/bed/roller/roller_buckled //the roller bed this bodybag is attached to.
 	var/buckle_offset = 5
 	layer = ABOVE_OBJ_LAYER
+	intact_closet = FALSE
 
 /obj/structure/closet/body_bag/attackby(obj/item/W, mob/user)
 	if(istype(W, /obj/item/pen))

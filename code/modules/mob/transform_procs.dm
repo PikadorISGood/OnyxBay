@@ -32,8 +32,6 @@
 	for(var/obj/item/I in src)
 		drop(I)
 	set_species(species.primitive_form)
-	dna.SetSEState(GLOB.MONKEYBLOCK,1)
-	dna.SetSEValueRange(GLOB.MONKEYBLOCK,0xDAC, 0xFFF)
 
 	to_chat(src, "<B>You are now [species.name]. </B>")
 	qdel(animation)
@@ -174,7 +172,7 @@
 		var/list/babies = list()
 		for(var/i=1,i<=number,i++)
 			var/mob/living/carbon/metroid/M = new /mob/living/carbon/metroid(loc)
-			M.nutrition = round(nutrition/number)
+			M.set_nutrition(round(M.nutrition / number))
 			step_away(M,src)
 			babies += M
 		new_metroid = pick(babies)

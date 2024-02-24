@@ -42,6 +42,9 @@
 	var/chat_color
 	var/chat_color_darkened
 
+	/// Icon state's name that can be used during icon generation as a base without impacting appearance of atom in mapping tools.
+	var/base_icon_state
+
 	/// This atom's cache of non-protected overlays, used for normal icon additions. Do not manipulate directly- See SSoverlays.
 	var/list/atom_overlay_cache
 
@@ -171,7 +174,7 @@
 	return FALSE
 
 /atom/proc/CheckExit()
-	return 1
+	return TRUE
 
 // If you want to use this, the atom must have the PROXMOVE flag, and the moving
 // atom must also have the PROXMOVE flag currently to help with lag. ~ ComicIronic

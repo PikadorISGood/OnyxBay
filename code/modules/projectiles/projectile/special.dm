@@ -116,16 +116,8 @@
 				H.Stun(5)
 				for (var/mob/V in viewers(src))
 					V.show_message(SPAN_WARNING("[M] writhes in pain as \his vacuoles boil."), 3, SPAN_WARNING("You hear the crunching of leaves."), 2)
-			if(prob(35))
-				if(prob(80))
-					randmutb(M)
-					domutcheck(M,null)
-				else
-					randmutg(M)
-					domutcheck(M,null)
-			else
-				M.adjustFireLoss(rand(5,15))
-				M.show_message(SPAN_DANGER("The radiation beam singes you!"))
+			M.adjustFireLoss(rand(5,15))
+			M.show_message(SPAN_DANGER("The radiation beam singes you!"))
 	else if(istype(target, /mob/living/carbon))
 		M.show_message(SPAN_NOTICE("The radiation beam dissipates harmlessly through your body."))
 	else
@@ -159,7 +151,7 @@
 	if(ishuman(target)) //These rays make plantmen fat.
 		var/mob/living/carbon/human/H = M
 		if((H.species.species_flags & SPECIES_FLAG_IS_PLANT) && (H.nutrition < 500))
-			H.nutrition += 30
+			H.add_nutrition(30)
 	else if (istype(target, /mob/living/carbon))
 		M.show_message(SPAN_NOTICE("The radiation beam dissipates harmlessly through your body."))
 	else

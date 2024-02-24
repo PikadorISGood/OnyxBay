@@ -84,7 +84,6 @@
 	var/mob/remoteview_target = null
 	var/hand_blood_color
 
-	var/list/flavor_texts = list()
 	var/gunshot_residue
 	var/pulling_punches    // Are you trying not to hurt your opponent?
 	var/full_prosthetic    // We are a robutt.
@@ -123,5 +122,6 @@
 	var/skin_state = SKIN_NORMAL
 	var/no_pain = 0
 	var/full_pain = 0 // Cheaper to actually store this than iterate over all the organs for every single check
+	var/full_pain_lasttick = 0
 
 	var/debug = 0

@@ -62,7 +62,7 @@
 	else if(H.nutrition >= STOMACH_FULLNESS_HIGH)
 		jelly_vessel.add_jelly(0.15)
 		if(jelly_volume <= BLOOD_VOLUME_LOSE_NUTRITION)
-			H.nutrition += -0.125
+			H.remove_nutrition(0.125)
 
 	..()
 
@@ -125,7 +125,6 @@
 	spare.real_name = spare.dna.real_name
 	spare.name = spare.dna.real_name
 	spare.UpdateAppearance(mutcolor_update=1)
-	domutcheck(spare, null)
 	spare.Move(get_step(H.loc, pick(NORTH,SOUTH,EAST,WEST)))
 	spare.AddComponent(/datum/component/body_swapper)
 
